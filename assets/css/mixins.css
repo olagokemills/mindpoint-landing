@@ -1,0 +1,110 @@
+.primary-btn{
+    background-color: #233B5B;
+}
+
+@keyframes fade-in-out {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.fade-in-out {
+    animation: fade-in-out 3s ease-in-out infinite;
+}
+.rotate-out {
+    animation: rotate 7s linear infinite;
+}
+.fade-in-out:hover,.rotate-out:hover{
+    animation-play-state: paused;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    33% {
+        transform: rotate(360deg);
+    }
+    67% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.typing {
+    position: relative;
+    display: inline-block;
+}
+
+.typing::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: #233B5B;
+    animation: typing 2s steps(20) infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.animate {
+    height: 300px;
+    background-color: #f0f0f0;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.scaling {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.scaling:hover {
+    transform: scale(1.2);
+}
+.bg-first{
+    background-color: #051937;
+    padding: 0.75rem;
+}
+.bg-second{
+    background-color: #348EFF;
+    padding: 0.75rem;
+}
+.bg-third{
+    background-color: #334B49;
+    padding: 0.75rem;
+}
+.bg-fourth{
+    background-color: #6E0F2A;
+    padding: 0.75rem;
+}
+.link-ico{
+   display: inline-flex;
+   width: 15px;
+}
+.p-4-5{
+    padding: 2rem;
+}
+.h-50{
+    min-height: 50vh;
+}
